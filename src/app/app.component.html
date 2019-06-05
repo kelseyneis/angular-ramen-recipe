@@ -1,0 +1,16 @@
+<div>
+  <h2>Original</h2>
+<recipe-form
+  [recipe]="originalRecipe"
+  (updatedRecipe)="updatedUpdated($event)"
+></recipe-form>
+
+<hr>
+
+<h2>Updated</h2>
+(this receipe you can change individual values to update the other values)
+<recipe-form
+  [recipe]="updatedRecipe"
+  (updatedRecipe)="updateQuantities($event)"
+></recipe-form>
+</div>
